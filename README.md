@@ -1,3 +1,32 @@
+# Vercel AI Chatbot
+
+An AI-powered chatbot built with Next.js and deployed on Vercel.
+
+## Deployment
+
+This project is automatically deployed to Vercel. You can view the latest deployment at:
+https://automatesetup-1l9qcyl9q-alubuarts-projects.vercel.app
+
+## Development
+
+To run this project locally:
+
+```bash
+npm install
+npm run dev
+```
+
+## Features
+
+- Next.js 14 App Router
+- AI-powered chat interface
+- Real-time responses
+- Dark mode support
+- TypeScript
+- Tailwind CSS
+
+For more information about development guidelines, see [.cursorrules](./.cursorrules).
+
 <a href="https://chat.vercel.ai/">
   <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
   <h1 align="center">Next.js AI Chatbot</h1>
