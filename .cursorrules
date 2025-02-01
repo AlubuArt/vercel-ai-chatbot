@@ -1,0 +1,104 @@
+# Vercel AI Chatbot Developer Guidelines
+
+## Project Overview
+This is a Next.js-based AI chatbot application using modern web technologies and best practices.
+
+## Code Style & Formatting
+
+### TypeScript/JavaScript
+- Use TypeScript for type safety
+- Follow Biome configuration for formatting (see biome.jsonc)
+- Use single quotes for strings
+- Use trailing commas in objects and arrays
+- Maximum line width: 80 characters
+- Use 2 spaces for indentation
+- Use semicolons at the end of statements
+
+### React Components
+- Use functional components with TypeScript
+- Include 'use client' directive for client-side components
+- Props interfaces should be defined at the top of the file
+- Use named exports instead of default exports
+- Follow component naming convention: PascalCase
+
+### CSS/Styling
+- Use Tailwind CSS for styling
+- Follow the project's custom color scheme and variables
+- Use the `cn()` utility for class name merging
+- Dark mode support is required for all components
+
+## Project Structure
+
+### Directory Organization
+- /app - Next.js app router files
+- /components - React components
+- /lib - Utility functions and core logic
+- /hooks - Custom React hooks
+- /public - Static assets
+
+### Component Organization
+- UI components should be in /components/ui
+- Complex components should have their own directory
+- Keep related components together
+
+## Dependencies
+- React: 19.0.0-rc
+- Next.js: 14.2.5
+- TypeScript: ^5.6.3
+- Tailwind CSS: ^3.4.1
+- See package.json for complete list
+
+## Git Conventions
+- Use descriptive commit messages
+- Keep commits focused and atomic
+- Branch naming: feature/, bugfix/, hotfix/
+
+## Testing
+- Write tests for critical functionality
+- Use TypeScript for test files
+- Place tests next to the components they test
+
+## Performance Guidelines
+- Optimize images and assets
+- Use proper code splitting
+- Implement proper loading states
+- Use React.memo for expensive components
+
+## Security
+- Never expose API keys in the code
+- Validate all user inputs
+- Follow OWASP security guidelines
+- Use environment variables for sensitive data
+
+## Documentation
+- Document complex functions and components
+- Include JSDoc comments for public APIs
+- Keep README up to date
+- Document environment setup requirements
+
+## Best Practices
+- Follow React hooks rules
+- Implement proper error handling
+- Use proper TypeScript types
+- Keep components small and focused
+- Implement proper loading and error states
+- Use proper semantic HTML elements
+
+## Editor Configuration
+- Use VSCode or compatible editors
+- Install recommended extensions:
+  - ESLint
+  - Prettier
+  - Tailwind CSS IntelliSense
+
+## CI/CD
+- All commits must pass linting
+- All commits must pass type checking
+- All commits must pass tests
+- Vercel deployment for each PR
+
+## Accessibility
+- Follow WCAG guidelines
+- Use proper ARIA attributes
+- Ensure keyboard navigation
+- Maintain proper contrast ratios 
